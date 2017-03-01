@@ -206,8 +206,8 @@ section {
 }
 
 section.success {
-	background: @theme-success;
-	color: white;
+	background: white;
+	color: @theme-primary;
 }
 
 @media(max-width:767px) {
@@ -218,6 +218,37 @@ section.success {
 		padding-top: 75px;
 	}
 }
+
+//experience section
+
+.job {
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: @theme-primary;
+	.job-role {
+		font-weight: 400;
+	}
+	.company {
+	    font-weight: 700;
+	    font-size: 30px;
+	}
+	.job-function {
+		font-weight: 100;
+    	font-size: 15px;
+	}
+
+	.job-logo {
+  		width: 250px;
+ 		height: 250px;
+	}
+
+	.job-logo img {
+	  max-height: 100%;
+	  max-width: 100%;
+	}
+}
+
+
+
 
 #portfolio {
     .portfolio-item {
