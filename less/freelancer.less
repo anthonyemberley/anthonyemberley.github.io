@@ -14,6 +14,24 @@ p.small {
 	font-size: 16px;
 }
 
+.skills-header {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.skills-text {
+	font-size: 20px;
+}
+
+.skills-label {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+strong.portfolio-text{
+	color: @theme-primary;
+}
+
 a,
 a:hover,
 a:focus,
@@ -254,6 +272,7 @@ section.success {
     .portfolio-item {
         margin: 0 0 15px;
         right: 0;
+        //border: 2px solid @theme-primary;
         .portfolio-link {
             display: block;
             position: relative;
@@ -299,7 +318,7 @@ section.success {
 @media(min-width:767px) {
     #portfolio {
         .portfolio-item {
-            margin: 0 0 30px;
+            margin: 0 0 0px;
         }
     }
 }
@@ -379,6 +398,9 @@ footer {
 	}
 }
 
+//icons
+
+
 // Buttons
 
 .btn-outline {
@@ -417,6 +439,32 @@ footer {
 	text-align: center;
 	font-size: 20px;
 	line-height: 45px;
+}
+
+.btn-portfolio {
+	margin-left: 5px;
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	border: 2px solid @theme-primary;
+	border-radius: 100%;
+	border-padding-left: 5px;
+	text-align: center;
+	font-size: 20px;
+	line-height: 45px;
+	color: @theme-primary;
+	font-size: 20px;
+	background: transparent;
+	transition: all 0.3s ease-in-out;
+	margin-top: 15px;
+	&:hover,
+	&:focus,
+	&:active,
+	&.active {
+		color: @theme-success;
+		background: @theme-primary;
+		border: solid 2px @theme-primary;
+	}
 }
 
 .btn:focus,
